@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/orange"
+    >
+
+    <EditText
+        android:id="@+id/etRegistrationPageName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Name (Min. 3 characters)"
+        android:inputType="textPersonName"
+        android:layout_marginTop="70dp"
+        android:drawableLeft="@drawable/person"
+        />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etRegistrationPageName"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/email"
+        />
+
+    <EditText
+        android:id="@+id/etRegistrationMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Mobile Number (10 digits)"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_below="@id/etEmailAddress"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/phone"
+        />
+
+    <EditText
+        android:id="@+id/etRegistrationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Delivery Address"
+        android:inputType="textPostalAddress"
+        android:layout_below="@id/etRegistrationMobileNumber"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/location"
+        />
+
+    <EditText
+        android:id="@+id/etRegistrationPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Password (Min. 4 characters)"
+        android:inputType="textPassword"
+        android:layout_below="@id/etRegistrationAddress"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/lock"
+        />
+
+    <EditText
+        android:id="@+id/etRegistrationConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etRegistrationPassword"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/lock"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/etRegistrationConfirmPassword"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>
